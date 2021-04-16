@@ -14,14 +14,12 @@
 		}
 	}
 
-	@media only screen and (max-width: $tab-port){
-		.row{
+	@media only screen and (max-width: $tab-port) {
+		.row {
 			position: static !important;
-			
 		}
-		.container{
+		.container {
 			position: static !important;
-
 		}
 	}
 
@@ -32,16 +30,31 @@
 		&-img {
 			min-width: 6rem;
 			min-height: 6rem;
+			max-width: 6rem;
+			max-height: 6rem;
 			border-radius: 8px;
 			margin-right: 2rem;
+			border-radius: 8px;
+			overflow: hidden;
 			img {
 				width: 100%;
 			}
 		}
 
 		&-info {
+			p.p__text,
 			h3.song__title {
 				white-space: nowrap;
+			}
+
+		}
+
+		@media only screen and (max-width:$tab-port){
+			&-img{
+				max-width: 4rem;
+				max-height: 4rem;
+				min-width: 4rem;
+				min-height: 4rem;
 			}
 		}
 	}
@@ -69,11 +82,22 @@
 		.btn__play {
 			margin: 2rem;
 		}
+
+		@media only screen and (max-width:$tab-port){
+			.btn__prev{
+				display: none;
+			}
+		}
 	}
 
 	@media only screen and (max-width: $tab-port) {
 		.playing-control-col {
 			position: static;
+			margin-top: 2rem;
+		}
+		.playing-song-col {
+			position: static;
+			margin-top: 2rem;
 		}
 	}
 
@@ -82,11 +106,17 @@
 		align-items: center;
 		justify-content: center;
 		@media only screen and (max-width: $tab-port) {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			justify-content: space-between;
+			padding: 1rem 2rem;
+
+			p.p__text{
+				// margin-top: 1rem;
+			}
+		}
 		.start__time {
 			color: $color-primary;
 		}
@@ -104,7 +134,7 @@
 	overflow: visible;
 	margin: 2rem;
 
-	@media only screen and (max-width: $tab-port){
+	@media only screen and (max-width: $tab-port) {
 		max-width: 900px;
 		position: absolute;
 		top: 0;

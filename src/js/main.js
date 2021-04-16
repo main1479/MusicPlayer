@@ -59,7 +59,7 @@ $('.slider3').owlCarousel({
 			nav: false,
 		},
 		600: {
-			items: 0,
+			items: 5,
 			nav: false,
 		},
 		1000: {

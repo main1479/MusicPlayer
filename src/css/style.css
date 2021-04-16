@@ -39,6 +39,7 @@ body {
   background: #1f1e2b;
   color: #fff; }
 
+figure,
 p {
   margin-bottom: 0; }
 
@@ -59,6 +60,12 @@ p {
   .btn__listen:hover {
     color: #fff;
     opacity: 0.9; }
+
+.laptop-port-show {
+  display: none; }
+  @media only screen and (max-width: 64em) {
+    .laptop-port-show {
+      display: block; } }
 
 .tac {
   text-align: center; }
@@ -320,6 +327,9 @@ p {
             color: #ff4d7d; }
             .sidebar .nav__link.active svg, .sidebar .nav__link:hover svg {
               fill: #ff4d7d; } }
+    @media only screen and (max-width: 35.9375em) {
+      .sidebar .nav__link {
+        transform: scale(0.8); } }
 
 .slide__item .img {
   max-height: 28rem;
@@ -355,12 +365,23 @@ p {
     .playing-wrapper .playing__song-img {
       min-width: 6rem;
       min-height: 6rem;
+      max-width: 6rem;
+      max-height: 6rem;
       border-radius: 8px;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      border-radius: 8px;
+      overflow: hidden; }
       .playing-wrapper .playing__song-img img {
         width: 100%; }
+    .playing-wrapper .playing__song-info p.p__text,
     .playing-wrapper .playing__song-info h3.song__title {
       white-space: nowrap; }
+    @media only screen and (max-width: 48em) {
+      .playing-wrapper .playing__song-img {
+        max-width: 4rem;
+        max-height: 4rem;
+        min-width: 4rem;
+        min-height: 4rem; } }
   .playing-wrapper .playing__control {
     display: flex;
     align-items: center;
@@ -374,9 +395,16 @@ p {
       fill: #ff4d7d; }
     .playing-wrapper .playing__control .btn__play {
       margin: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .playing-wrapper .playing__control .btn__prev {
+        display: none; } }
   @media only screen and (max-width: 48em) {
     .playing-wrapper .playing-control-col {
-      position: static; } }
+      position: static;
+      margin-top: 2rem; }
+    .playing-wrapper .playing-song-col {
+      position: static;
+      margin-top: 2rem; } }
   .playing-wrapper .playing__progress {
     display: flex;
     align-items: center;
@@ -386,7 +414,9 @@ p {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; } }
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem 2rem; } }
     .playing-wrapper .playing__progress .start__time {
       color: #ff4d7d; }
 
@@ -467,6 +497,85 @@ p {
   width: 0;
   height: 100%; }
 
+.song__list-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #c1c1c17e; }
+  .song__list-item .song__info {
+    max-width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2rem; }
+    .song__list-item .song__info .playing__icon-wrapper {
+      display: flex;
+      align-items: center; }
+    .song__list-item .song__info p.p__text {
+      margin-right: 1rem;
+      opacity: 0.6; }
+  .song__list-item .img {
+    min-width: 6rem;
+    min-height: 6rem;
+    max-width: 6rem;
+    max-height: 6rem;
+    border-radius: 8px;
+    margin-right: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(31, 30, 43, 0.3); }
+    .song__list-item .img img {
+      width: 100%; }
+    .song__list-item .img svg {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      fill: #fff; }
+  .song__list-item .dot__menu {
+    margin-left: auto; }
+    .song__list-item .dot__menu svg {
+      width: 2rem;
+      height: 1rem; }
+  .song__list-item.playing .playing__indicator {
+    display: inline-block; }
+
+.playing__indicator {
+  width: 3px;
+  height: 15px;
+  border-radius: 100px;
+  background: #ff4d7d;
+  display: none;
+  position: relative;
+  animation: playing 3s linear infinite; }
+  .playing__indicator::after, .playing__indicator::before {
+    content: '';
+    width: 3px;
+    height: 15px;
+    border-radius: 100px;
+    background: #ff4d7d;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    animation: playing 3s linear infinite; }
+  .playing__indicator::before {
+    left: -5px;
+    animation-delay: 1s; }
+  .playing__indicator::after {
+    right: -5px;
+    animation-delay: 2s; }
+
+@keyframes playing {
+  0% {
+    transform: scaleY(1); }
+  50% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+
 .slider .owl-dots {
   display: none; }
 
@@ -493,7 +602,21 @@ p {
 
 .slider3 .img {
   width: 12rem;
-  height: 12rem; }
+  height: 12rem;
+  position: relative; }
+  .slider3 .img svg {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    fill: #fff; }
+
+@media only screen and (max-width: 64em) {
+  .slider3 {
+    display: none !important; } }
 
 @media only screen and (max-width: 48em) {
   .slider2 {

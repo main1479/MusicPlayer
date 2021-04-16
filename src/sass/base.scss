@@ -31,6 +31,7 @@ body {
 	color: #fff;
 }
 
+figure,
 p {
 	margin-bottom: 0;
 }
@@ -53,6 +54,14 @@ p {
 	&:hover {
 		color: #fff;
 		opacity: 0.9;
+	}
+}
+
+.laptop-port-show{
+	display: none;
+
+	@media only screen and (max-width:$laptop-port){
+		display: block;
 	}
 }
 

@@ -121,12 +121,20 @@
 					opacity: 1;
 					color: $color-primary;
 
-					svg{
+					svg {
 						fill: $color-primary;
 					}
 				}
 			}
 		}
+
+		@media only screen and (max-width: $mbl-land) {
+			&__link {
+				transform: scale(0.8);
+			}
+		}
+
+		
 	}
 }
 // .sidebar__bg {
