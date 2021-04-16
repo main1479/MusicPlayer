@@ -1,0 +1,72 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-pause {
+  width: 0.6904296875em;
+}
+
+.icon-burger {
+  width: 1.818359375em;
+}
+
+.icon-progress {
+  width: 7.3564453125em;
+}
+
+.icon-chevron-down {
+  width: 1.7490234375em;
+}
+
+.icon-chevron-left {
+  width: 0.5712890625em;
+}
+
+.icon-shuffle {
+  width: 1.0498046875em;
+}
+
+.icon-sound {
+  width: 1.302734375em;
+}
+
+.icon-home {
+  width: 0.9609375em;
+}
+
+.icon-playlist {
+  width: 1.2939453125em;
+}
+
+.icon-heart {
+  width: 1.0810546875em;
+}
+
+.icon-image {
+  width: 1.111328125em;
+}
+
+.icon-edit {
+  width: 1.001953125em;
+}
+
+.icon-dot-menu {
+  width: 4.5em;
+}
+
+.icon-user {
+  width: 0.76171875em;
+}

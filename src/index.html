@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font-awesome  -->
+		<script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="sidebar">
+			<h2 class="heading white mb-2">Library</h2>
+			<ul class="nav">
+				<li class="nav__item">
+					<a href="#" class="nav__link active">
+						<svg><use xlink:href="./img/icons.svg#icon-home"></use></svg>
+						Home
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-playlist"></use></svg>
+						Playlist</a
+					>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-heart"></use></svg>
+						Featured</a
+					>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-user"></use></svg>
+						Artist</a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<!-- ====================================== -->
+		<!-- ========== currently playing ========= -->
+		<!-- ====================================== -->
+		<div class="playing-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<div class="playing__song">
+							<figure class="playing__song-img">
+								<img src="./img/playing-song.png" alt="IMG" />
+							</figure>
+							<div class="playing__song-info">
+								<h3 class="heading song__title">Tokyo Nights - Original Mix</h3>
+								<p class="p__text artist__name">LST STR</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="playing__control">
+							<button class="btn btn__prev btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-prev"></use>
+								</svg>
+							</button>
+							<button class="btn btn__play btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-pause"></use>
+								</svg>
+							</button>
+							<button class="btn btn__next btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-next"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="playing__progress">
+							<p class="p__text start__time">00:00</p>
+							<div class="progress">
+								<div class="bar"><div class="fill"></div></div>
+								<input type="range" min="0" max="100" value="0" step="1" id="slider" />
+							</div>
+							<p class="p__text end__time">00:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- bootstrap files -->
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<!-- Main js file -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
