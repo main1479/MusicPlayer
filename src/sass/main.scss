@@ -1,9 +1,19 @@
 @import './variables.scss';
 @import './typography.scss';
 @import './base.scss';
-@import './sidebar.scss';
+
+// ===============================
+// components
+// ===============================
+@import './components/sidebar.scss';
+@import './components/sliderImages.scss';
+@import './components/miniSongsCard.scss';
+@import './components/playing.scss';
+
+// ===============================
+// pages
+// ===============================
 @import './homepage.scss';
 @import './playlist.scss';
 @import './featured.scss';
 @import './artist.scss';
-@import './playing.scss';
