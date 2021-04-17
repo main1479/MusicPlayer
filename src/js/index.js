@@ -9,7 +9,7 @@ slider.addEventListener('input', fillw);
 // =========================================
 // sliders
 
-$('.slider1').owlCarousel({
+$('.homepage-slider1').owlCarousel({
 	loop: false,
 	margin: 10,
 	nav: true,
@@ -29,7 +29,7 @@ $('.slider1').owlCarousel({
 	},
 });
 
-$('.slider2').owlCarousel({
+$('.homepage-slider2').owlCarousel({
 	loop: false,
 	margin: 10,
 	nav: true,
@@ -49,7 +49,7 @@ $('.slider2').owlCarousel({
 	},
 });
 
-$('.slider3').owlCarousel({
+$('.homepage-slider3').owlCarousel({
 	loop: false,
 	margin: 10,
 	nav: true,

@@ -17,21 +17,21 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
+	<body class="playlist-page">
 		<!-- ========================================== -->
 		<!-- =============== sidebar ================== -->
 		<!-- ========================================== -->
-		<div class="sidebar">
+		<div class="sidebar tablet-port-hide">
 			<h2 class="heading white mb-2">Library</h2>
 			<ul class="nav">
 				<li class="nav__item">
-					<a href="./index.html" class="nav__link active">
+					<a href="./index.html" class="nav__link">
 						<svg><use xlink:href="./img/icons.svg#icon-home"></use></svg>
 						Home
 					</a>
 				</li>
 				<li class="nav__item">
-					<a href="./playlist.html" class="nav__link">
+					<a href="./playlist.html" class="nav__link active">
 						<svg><use xlink:href="./img/icons.svg#icon-playlist"></use></svg>
 						Playlist</a
 					>
@@ -50,17 +50,54 @@
 				</li>
 			</ul>
 		</div>
+
+		<!-- ===================================================== -->
+		<!-- this area will be shown on mobile version -->
+		<!-- ===================================================== -->
+		<div class="tablet-port-show playlist__header">
+			<img src="img/img-left.png" alt="img" class="cover" />
+			<div class="container-fluid">
+				<nav class="playlist__nav">
+					<a href="#" class="btn btn__back white">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+						</svg>
+						Back
+					</a>
+					<a href="#" class="btn btn__burger white">
+						<svg class="icon icon-burger"><use xlink:href="./img/icons.svg#icon-burger"></use></svg>
+					</a>
+				</nav>
+
+				<div class="playlist__header-content mt-3">
+					<h2 class="heading white playlist__name">Voidi Records Playlist</h2>
+					<p class="p__text artist__name white mb-2">By Nika Key</p>
+					<a href="#" class="btn btn__listen btn-sm btn-white">Listen</a>
+				</div>
+
+			</div>
+			<a href="#" class="btn btn__add-round">
+				<svg><use xlink:href="./img/icons.svg#icon-plus"></use></svg>
+			</a>
+		</div>
 		<!-- ============================================== -->
 		<!-- ============== Content Area ================== -->
 		<!-- ============================================== -->
 		<div class="container main-content">
-			<div class="content__header d-flex align-items-center mt-3 pb-2">
-				<h2 class="heading">Featured</h2>
+			<!-- <div class="content__header d-flex align-items-center mt-3 pb-2">
+				<h2 class="heading">My Playlist</h2>
 				<a href="#" class="btn btn__listen ml-5">Listen</a>
-			</div>
-			<div class="row">
+			</div> -->
+			<!-- ===================================================== -->
+			<!-- this area will be shown on desktop version -->
+			<!-- ===================================================== -->
+			<div class="row tablet-port-hide">
 				<div class="col-md-7">
-					<div class="owl-carousel owl-theme slider slider1 homepage-slider1">
+					<div class="content__header d-flex align-items-center mt-3 pb-2">
+						<h2 class="heading">My Playlist</h2>
+						<a href="#" class="btn btn__listen ml-5">Listen</a>
+					</div>
+					<div class="owl-carousel owl-theme slider slider1 playlist-slider1">
 						<div class="slide__item">
 							<figure class="img">
 								<img src="img/img-left.png" alt="img" class="img-fluid" />
@@ -91,7 +128,12 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-					<div class="owl-carousel owl-theme slider slider2 homepage-slider2">
+					<div class="content__header d-flex align-items-center mt-3 pb-2">
+						<h2 class="heading">Sunday Playlist</h2>
+						<a href="#" class="btn btn__listen ml-5 hide">Listen</a>
+						<!-- **** IF YOU WANT TO SHOW THIS BUTTON JUST REMOVE THIS 'hide' CLASS *** -->
+					</div>
+					<div class="owl-carousel owl-theme slider slider2 playlist-slider2">
 						<div class="slide__item">
 							<figure class="img">
 								<img src="img/img-right.png" alt="img" class="img-fluid" />
@@ -122,16 +164,15 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- ====================================== -->
-			<!-- ======== top played songs area ========== -->
+			<!-- ======== Other playlist area ========== -->
 			<!-- ====================================== -->
 
-			<h2 class="heading mt-4 mb-2">Top played songs</h2>
+			<h2 class="heading mt-4 mb-2">Other Playlist</h2>
 			<!-- ====================================== -->
 			<!-- this slider will be on desktop version -->
 			<!-- ====================================== -->
-			<div class="owl-carousel owl-theme slider slider3 homepage-slider3">
+			<div class="owl-carousel owl-theme slider slider3 playlist-slider3">
 				<div class="slide__item">
 					<figure class="img">
 						<img src="img/top-played1.png" alt="img" class="img-fluid" />
@@ -338,6 +379,6 @@
 		<script src="js/owl.carousel.min.js"></script>
 
 		<!-- Main js file -->
-		<script src="js/index.js"></script>
+		<script src="js/playlist.js"></script>
 	</body>
 </html>

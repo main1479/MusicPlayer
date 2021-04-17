@@ -1,0 +1,43 @@
+.playlist-page{
+
+   .main-content{
+      @media only screen and (max-width:$tab-port){
+         margin-top: 0;
+      }
+   }
+
+   .playlist__header{
+      min-height: 30rem;
+      max-height: 50vh;
+      position: relative;
+
+      .cover{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -2;
+      }
+
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: #000;
+         z-index: -1;
+         opacity: 0.6;
+      }
+   }
+
+   .playlist__nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10rem;
+   }
+}

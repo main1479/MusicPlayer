@@ -4,8 +4,8 @@
 <path fill="#ff4d7d" style="fill: var(--color1, #ff4d7d)" d="M16.763 2.663c0-1.471 1.192-2.663 2.663-2.663s2.663 1.192 2.663 2.663v0 26.671c0 1.471-1.192 2.663-2.663 2.663s-2.663-1.192-2.663-2.663v0zM0 2.663c0-1.471 1.192-2.663 2.663-2.663s2.663 1.192 2.663 2.663v0 26.671c0 1.471-1.192 2.663-2.663 2.663s-2.663-1.192-2.663-2.663v0z"></path>
 </symbol>
 <symbol id="icon-burger" viewBox="0 0 58 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8.7273" d="M53.818 27.636h-29.091"></path>
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8.7273" d="M53.818 4.364h-49.455"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M4.364 0h49.455c2.41 0 4.364 1.954 4.364 4.364s-1.954 4.364-4.364 4.364h-49.455c-2.41 0-4.364-1.954-4.364-4.364s1.954-4.364 4.364-4.364z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M24.727 23.273h29.091c2.41 0 4.364 1.954 4.364 4.364s-1.954 4.364-4.364 4.364h-29.091c-2.41 0-4.364-1.954-4.364-4.364s1.954-4.364 4.364-4.364z"></path>
 </symbol>
 <symbol id="icon-play-round" viewBox="0 0 32 32">
 <path opacity="0.4" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>

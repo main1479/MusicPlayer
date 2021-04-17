@@ -60,12 +60,65 @@ p {
   .btn__listen:hover {
     color: #fff;
     opacity: 0.9; }
+  .btn__listen.btn-white {
+    background: #fff;
+    color: #1f1e2b; }
+
+.btn__add-round {
+  background: #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); }
+  .btn__add-round svg {
+    width: 60%;
+    height: 60%;
+    fill: #ff4d7d; }
+
+.btn__burger {
+  padding: 0; }
+  .btn__burger svg {
+    width: 3rem;
+    height: 2rem;
+    margin-right: 2rem;
+    fill: #fff; }
+
+.btn__back {
+  display: flex;
+  align-items: center;
+  padding: 0; }
+  .btn__back svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+    fill: #fff; }
 
 .laptop-port-show {
   display: none; }
   @media only screen and (max-width: 64em) {
     .laptop-port-show {
       display: block; } }
+
+.tablet-port-show {
+  display: none; }
+  @media only screen and (max-width: 64em) {
+    .tablet-port-show {
+      display: block; } }
+
+@media only screen and (max-width: 48em) {
+  .tablet-port-hide {
+    display: none; } }
+
+.hide {
+  opacity: 0;
+  visibility: hidden; }
 
 .tac {
   text-align: center; }
@@ -635,3 +688,36 @@ p {
       margin-top: 13rem;
       width: 95%;
       max-width: 117rem; } }
+
+@media only screen and (max-width: 48em) {
+  .playlist-page .main-content {
+    margin-top: 0; } }
+
+.playlist-page .playlist__header {
+  min-height: 30rem;
+  max-height: 50vh;
+  position: relative; }
+  .playlist-page .playlist__header .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; }
+  .playlist-page .playlist__header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0.6; }
+
+.playlist-page .playlist__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem; }

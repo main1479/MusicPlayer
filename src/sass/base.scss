@@ -55,14 +55,79 @@ p {
 		color: #fff;
 		opacity: 0.9;
 	}
+
+	&.btn-white {
+		background: #fff;
+		color: $color-secondary;
+	}
 }
 
-.laptop-port-show{
+.btn__add-round {
+	background: #fff;
+	width: 4.5rem;
+	height: 4.5rem;
+	position: absolute;
+	bottom: 0;
+	right: 4rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(50%);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	svg {
+		width: 60%;
+		height: 60%;
+		fill: $color-primary;
+	}
+}
+
+.btn__burger {
+	padding: 0;
+	svg {
+		width: 3rem;
+		height: 2rem;
+		margin-right: 2rem;
+		fill: #fff;
+	}
+}
+.btn__back {
+	display: flex;
+	align-items: center;
+	padding: 0;
+
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 2rem;
+		fill: #fff;
+	}
+}
+
+.laptop-port-show {
 	display: none;
 
-	@media only screen and (max-width:$laptop-port){
+	@media only screen and (max-width: $laptop-port) {
 		display: block;
 	}
+}
+.tablet-port-show {
+	display: none;
+
+	@media only screen and (max-width: $laptop-port) {
+		display: block;
+	}
+}
+
+.tablet-port-hide {
+	@media only screen and (max-width: $tab-port) {
+		display: none;
+	}
+}
+
+.hide {
+	opacity: 0;
+	visibility: hidden;
 }
 
 // ======================================
