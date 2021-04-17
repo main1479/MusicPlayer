@@ -1,0 +1,125 @@
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn {
+	font-size: 1.6rem;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+.btn__listen {
+	background: $color-primary;
+	color: #fff;
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	box-shadow: 0 20px 40px rgba($color-primary, 0.15);
+
+	&:hover {
+		color: #fff;
+		opacity: 0.9;
+	}
+
+	&.btn-white {
+		background: #fff;
+		color: $color-secondary;
+	}
+}
+
+.btn__add-round {
+	background: #fff;
+	width: 4.5rem;
+	height: 4.5rem;
+	position: absolute;
+	bottom: 0;
+	right: 4rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(50%);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	svg {
+		width: 60%;
+		height: 60%;
+		fill: $color-primary;
+	}
+}
+
+.btn__burger {
+	padding: 0;
+	svg {
+		width: 3rem;
+		height: 2rem;
+		margin-right: 2rem;
+		fill: #fff;
+	}
+}
+.btn__back {
+	display: flex;
+	align-items: center;
+	padding: 0;
+
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 1rem;
+		fill: currentColor;
+	}
+}
+
+.btn__down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		fill: currentColor;
+	}
+
+	span {
+		margin-top: 1rem;
+	}
+}
+
+.btn__like {
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	svg {
+		width: 2rem;
+		height: 2rem;
+		fill: #fff;
+	}
+
+	&.liked {
+		svg {
+			fill: $color-primary;
+		}
+	}
+}
+
+.btn__icon,
+.btn__control {
+	position: relative;
+	svg {
+		transition: all 0.3s;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&:hover {
+		svg {
+			fill: $color-primary;
+		}
+	}
+}
+
+.btn__play {
+	margin: 2rem;
+}

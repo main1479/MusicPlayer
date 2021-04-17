@@ -10,14 +10,15 @@
 @import './components/miniSongsCard.scss';
 @import './components/playing.scss';
 @import './components/songList.scss';
+@import './components/buttons.scss';
 
 // ===============================
 // pages
 // ===============================
-@import './homepage.scss';
-@import './playlist.scss';
-@import './featured.scss';
-@import './artist.scss';
-@import './fullpage-player.scss';
-@import './playlist-inside.scss';
-@import './playlist-creation.scss';
+@import './pages/homepage.scss';
+@import './pages/playlist.scss';
+@import './pages/featured.scss';
+@import './pages/artist.scss';
+@import './pages/fullpage-player.scss';
+@import './pages/playlist-inside.scss';
+@import './pages/playlist-creation.scss';
