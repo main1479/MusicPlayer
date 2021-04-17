@@ -1,0 +1,19 @@
+.playlist-inside-page{
+
+
+   .btn__add-round{
+      position: relative;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      bottom: inherit;
+      transform: translate(0);
+   }
+
+   .btn__box{
+
+      @media only screen and (max-width: $tab-land){
+         justify-content: center;
+      }
+   }
+}

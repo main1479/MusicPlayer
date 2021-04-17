@@ -1,0 +1,68 @@
+.playlist-creation-page{
+
+   .playlist__image{
+      position: relative;
+      input[type="file"]{
+         opacity: 0;
+         width: 0;
+         height: 0;
+      }
+
+      label{
+         width: 100%;
+         display: block;
+         height: 100%;
+         cursor: pointer;
+         position: absolute;
+         top: 0;
+         left: 0;
+         margin-bottom: 0;
+         
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &.mbl-land-show{
+               object-fit: contain;
+            }
+         }
+      }
+
+      @media only screen and (max-width: $mbl-land){
+         overflow: visible;
+      }
+   }
+
+   .playlist__name{
+      // display: flex;
+      // align-items: center;
+      
+
+      svg{
+         width: 2rem;
+         height: 2rem;
+         margin-left: 2rem;
+      }
+   }
+
+   .btn__add{
+      padding: 1rem 6rem;
+      text-align: center;
+      svg{
+         width: 1.5rem;
+         height: 1.5rem;
+         fill: currentColor;
+         margin-right: 1rem;
+      }
+   }
+
+   .playlist-create-box{
+
+      @media only screen and (max-width: $mbl-land){
+         margin-top: 8rem !important;
+         background: #fff;
+         border-radius: 8px;
+      }
+   }
+}

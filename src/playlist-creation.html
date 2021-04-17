@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font-awesome  -->
+		<!-- <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script> -->
+		<!--Css files  -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="artist-page playlist-inside-page playlist-creation-page">
+		<!-- ========================================== -->
+		<!-- =============== sidebar ================== -->
+		<!-- ========================================== -->
+		<div class="sidebar laptop-port-hide">
+			<h2 class="heading white mb-2">Library</h2>
+			<ul class="nav">
+				<li class="nav__item">
+					<a href="./index.html" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-home"></use></svg>
+						Home
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="./playlist.html" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-playlist"></use></svg>
+						Playlist</a
+					>
+				</li>
+				<li class="nav__item">
+					<a href="./featured.html" class="nav__link">
+						<svg><use xlink:href="./img/icons.svg#icon-heart"></use></svg>
+						Featured</a
+					>
+				</li>
+				<li class="nav__item">
+					<a href="./artist.html" class="nav__link active">
+						<svg><use xlink:href="./img/icons.svg#icon-user"></use></svg>
+						Artist</a
+					>
+				</li>
+			</ul>
+		</div>
+		<!-- ============================================== -->
+		<!-- ============== Content Area ================== -->
+		<!-- ============================================== -->
+		<div class="container main-content">
+			<div class="artist playlist">
+				<div class="row playlist-create-box d-flex align-items-center text-center text-lg-left mt-3">
+					<div class="col-lg-2 mb-2">
+						<figure class="img artist__image playlist__image">
+							<input type="file" id="upload">
+							<label for="upload">
+								<img class="mbl-land-hide" src="img/edit-playlist.png" alt="img">
+								<img class="mbl-land-show" src="img/upload-img.png" alt="img">
+							</label>
+						</figure>
+					</div>
+					<div class="col-lg-5 mb-2">
+						<h2 class="heading artist__name playlist__name mb-1">My playlist
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-edit"></use>
+							</svg>
+						</h2>
+						<p class="p__text mb-2 creator__name">Playlist By Nika Key</p>
+					</div>
+					<!-- ========= back button ============= -->
+				</div>
+				<a href="./index.html" class="btn btn__back">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+					</svg>
+					Back
+				</a>
+			</div>
+
+			<!-- ====================================== -->
+			<!-- ======== add songs button area ========== -->
+			<!-- ====================================== -->
+			<div class="text-center mt-5">
+				<a href="#" class="btn btn__listen btn__add">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-plus"></use>
+					</svg>
+					Add Songs
+				</a>
+				<p class="p__text message mt-5">
+					You haven't chosen any songs
+				</p>
+			</div>
+		</div>
+
+		<!-- ====================================== -->
+		<!-- ========== currently playing ========= -->
+		<!-- ====================================== -->
+		<div class="playing-wrapper">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-8 playing-song-col">
+						<div class="playing__song">
+							<figure class="playing__song-img">
+								<img src="./img/playing-song.png" alt="IMG" />
+							</figure>
+							<div class="playing__song-info">
+								<h3 class="heading song__title">Tokyo Nights - Original Mix</h3>
+								<p class="p__text artist__name">LST STR</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-6 col-4 playing-control-col">
+						<div class="playing__control">
+							<button class="btn btn__prev btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-prev"></use>
+								</svg>
+							</button>
+							<button class="btn btn__play btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-pause"></use>
+								</svg>
+							</button>
+							<button class="btn btn__next btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-next"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="playing__progress">
+							<p class="p__text start__time">00:00</p>
+							<div class="progress">
+								<div class="bar"><div class="fill"></div></div>
+								<input type="range" min="0" max="100" value="0" step="1" id="slider" />
+							</div>
+							<p class="p__text end__time">00:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- bootstrap files -->
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<!-- carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- Main js file -->
+		<script src="js/artist.js"></script>
+	</body>
+</html>

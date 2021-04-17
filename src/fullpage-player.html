@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,11 +17,11 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body class="artist-page">
+	<body class="artist-page fullpage-player">
 		<!-- ========================================== -->
 		<!-- =============== sidebar ================== -->
 		<!-- ========================================== -->
-		<div class="sidebar laptop-port-hide">
+		<div class="sidebar mbl-land-hide">
 			<h2 class="heading white mb-2">Library</h2>
 			<ul class="nav">
 				<li class="nav__item">
@@ -53,7 +53,7 @@
 		<!-- ============================================== -->
 		<!-- ============== Content Area ================== -->
 		<!-- ============================================== -->
-		<div class="container main-content">
+		<div class="container main-content mbl-land-hide">
 			<div class="artist">
 				<div class="row text-center text-lg-left mt-3">
 					<div class="col-lg-2 mb-2">
@@ -224,7 +224,7 @@
 		<!-- ====================================== -->
 		<!-- ========== currently playing ========= -->
 		<!-- ====================================== -->
-		<div class="playing-wrapper">
+		<div class="playing-wrapper mbl-land-hide">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-xl-3 col-lg-4 col-md-6 col-8 playing-song-col">
@@ -269,6 +269,117 @@
 			</div>
 		</div>
 
+		<!-- =========================================== -->
+		<!-- This area will be shown on mobile version -->
+		<!-- =========================================== -->
+		<div class="container mbl-land-show">
+			<nav class="nav__fullpage">
+				<a href="./index.html" class="btn btn__back">
+					<svg class="icon icon-burger">
+						<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+					</svg>
+					Back
+				</a>
+				<a href="#" class="btn btn__burger">
+					<svg class="icon icon-burger"><use xlink:href="./img/icons.svg#icon-burger"></use></svg>
+				</a>
+			</nav>
+
+			<div class="text-center">
+				<a href="#" class="btn btn__down">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-chevron-down"></use>
+					</svg>
+					<span>Now Playing</span>
+				</a>
+			</div>
+			<!-- ========== currently playing slider ============ -->
+			<div class="owl-carousel fullpage-player-slider ">
+				<div class="slide__item">
+					<figure class="img mb-3">
+						<img src="img/fullpage1.png" alt="img" />
+						<button class="btn btn__like">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+					</figure>
+					<h2 class="heading song__name text-center">Once in a while</h2>
+					<p class="p__text artist__name text-center">Nika Key</p>
+				</div>
+				<div class="slide__item">
+					<figure class="img mb-3">
+						<img src="img/fullpage2.png" alt="img" />
+						<button class="btn btn__like liked">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-heart"></use>
+							</svg>
+						</button>
+					</figure>
+					<h2 class="heading song__name text-center">Once in a while</h2>
+					<p class="p__text artist__name text-center">Nika Key</p>
+				</div>
+			</div>
+
+			<div class="player__controls">
+				<div class="row d-flex align-items-center">
+					<div class="col-2">
+						<a href="#" class="btn btn__rounded btn__playlist">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-playlist"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="col-8 text-center">
+						<img src="img/progress2.png" alt="img" class="img-fluid" />
+					</div>
+					<div class="col-2">
+						<a href="#" class="btn btn__rounded btn__add">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-plus"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="row d-flex align-items-center">
+					<div class="col-2">
+						<button class="btn btn__icon btn__shuffle">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-shuffle"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="col-8 text-center">
+						<div class="player__control">
+							<button class="btn btn__prev btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-prev"></use>
+								</svg>
+							</button>
+							<button class="btn btn__play btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-play"></use>
+								</svg>
+							</button>
+							<button class="btn btn__next btn__control">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-next"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="col-2">
+						<button class="btn btn__icon btn__sound">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-sound"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- bootstrap files -->
 		<script src="js/jquery.js"></script>
 		<script src="js/popper.js"></script>
@@ -278,6 +389,6 @@
 		<script src="js/owl.carousel.min.js"></script>
 
 		<!-- Main js file -->
-		<script src="js/artist.js"></script>
+		<script src="js/fullpagePlaying.js"></script>
 	</body>
 </html>

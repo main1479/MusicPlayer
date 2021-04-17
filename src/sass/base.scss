@@ -104,6 +104,64 @@ p {
 	}
 }
 
+.btn__down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		fill: currentColor;
+	}
+
+	span {
+		margin-top: 1rem;
+	}
+}
+
+.btn__like {
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	svg {
+		width: 2rem;
+		height: 2rem;
+		fill: #fff;
+	}
+
+	&.liked {
+		svg {
+			fill: $color-primary;
+		}
+	}
+}
+
+.btn__icon,
+.btn__control {
+	position: relative;
+	svg {
+		transition: all 0.3s;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&:hover {
+		svg {
+			fill: $color-primary;
+		}
+	}
+}
+
+
+.btn__play {
+	margin: 2rem;
+}
+
 .laptop-port-show {
 	display: none;
 
@@ -116,10 +174,22 @@ p {
 		display: none;
 	}
 }
+.tablet-land-show {
+	display: none;
+
+	@media only screen and (max-width: $tab-land) {
+		display: block;
+	}
+}
+.tablet-land-hide {
+	@media only screen and (max-width: $tab-land) {
+		display: none;
+	}
+}
 .tablet-port-show {
 	display: none;
 
-	@media only screen and (max-width: $laptop-port) {
+	@media only screen and (max-width: $tab-port) {
 		display: block;
 	}
 }
@@ -127,6 +197,19 @@ p {
 .tablet-port-hide {
 	@media only screen and (max-width: $tab-port) {
 		display: none;
+	}
+}
+
+.mbl-land-hide {
+	@media only screen and (max-width: $mbl-land) {
+		display: none;
+	}
+}
+.mbl-land-show {
+	display: none;
+
+	@media only screen and (max-width: $mbl-land) {
+		display: block;
 	}
 }
 

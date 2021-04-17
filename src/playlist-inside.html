@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body class="artist-page">
+	<body class="artist-page playlist-inside-page">
 		<!-- ========================================== -->
 		<!-- =============== sidebar ================== -->
 		<!-- ========================================== -->
@@ -54,22 +54,22 @@
 		<!-- ============== Content Area ================== -->
 		<!-- ============================================== -->
 		<div class="container main-content">
-			<div class="artist">
-				<div class="row text-center text-lg-left mt-3">
+			<div class="artist playlist">
+				<div class="row d-flex align-items-center text-center text-lg-left mt-3">
 					<div class="col-lg-2 mb-2">
-						<figure class="img artist__image">
-							<img src="img/artist.png" class="img-fluid" alt="img" />
+						<figure class="img artist__image playlist__image">
+							<img src="img/playlist-cover.png" class="img-fluid" alt="img" />
 						</figure>
 					</div>
 					<div class="col-lg-5 mb-2">
-						<h2 class="heading artist__name mb-1">Nika Key</h2>
-						<p class="p__text mb-2">
-							Computer users and programmers have become ter users and programmers have become so
-							accustomed to using Windows, so accustomed to using Windows, even for the changing
-							capabilities and the appearances
-						</p>
-						<a href="#" class="btn btn__listen btn-sm mr-4">Listen</a>
-						<a href="#" class="btn btn__follow tablet-land-hide">Follow</a>
+						<h2 class="heading artist__name playlist__name mb-1">My playlist</h2>
+						<p class="p__text mb-2">LST STR, Anelie Lens, Nika Key, Armin Van Buuren and more</p>
+						<div class=" btn__box d-flex align-items-center">
+							<a href="#" class="btn btn__listen btn-sm mr-5">Listen</a>
+							<a href="#" class="btn btn__add-round">
+								<svg><use xlink:href="./img/icons.svg#icon-plus"></use></svg>
+							</a>
+						</div>
 					</div>
 					<!-- ========= back button ============= -->
 					<a href="./index.html" class="btn btn__back">
@@ -78,61 +78,13 @@
 						</svg>
 						Back
 					</a>
-					<a href="#" class="btn btn__follow btn__follow-outer tablet-land-show">Follow</a>
 				</div>
 			</div>
 
 			<!-- ====================================== -->
-			<!-- ======== Latest songs area ========== -->
+			<!-- ======== playlist songs list area ========== -->
 			<!-- ====================================== -->
-			<h2 class="heading mt-4 mb-2">Latest</h2>
-			<ul class="song__list mb-5">
-				<li class="song__list-item">
-					<figure class="img">
-						<img src="img/playing-song.png" alt="img" />
-					</figure>
-					<div class="song__info">
-						<div class="playing__icon-wrapper">
-							<p class="p__text song__length">03:25</p>
-							<span class="playing__indicator">&nbsp;</span>
-						</div>
-						<h3 class="heading song__name">Cloud 9 (Amelie Lens Remix)</h3>
-						<p class="p__text artist__name">Nika Key</p>
-					</div>
-					<button href="#" class="btn dot__menu">
-						<svg>
-							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
-						</svg>
-					</button>
-				</li>
-				<li class="song__list-item playing">
-					<figure class="img">
-						<img src="img/top-played1.png" alt="img" />
-						<svg>
-							<use xlink:href="./img/icons.svg#icon-pause-round"></use>
-						</svg>
-					</figure>
-					<div class="song__info">
-						<div class="playing__icon-wrapper">
-							<p class="p__text song__length">03:25</p>
-							<span class="playing__indicator">&nbsp;</span>
-						</div>
-						<h3 class="heading song__name">Cloud 9 (Amelie Lens Remix)</h3>
-						<p class="p__text artist__name">Nika Key</p>
-					</div>
-					<button href="#" class="btn dot__menu">
-						<svg>
-							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
-						</svg>
-					</button>
-				</li>
-			</ul>
-
-			<!-- ====================================== -->
-			<!-- ======== Popular track area ========== -->
-			<!-- ====================================== -->
-			<h2 class="heading mt-4 mb-2">Popular track</h2>
-			<ul class="song__list mb-5">
+			<ul class="song__list mb-5 mt-5">
 				<li class="song__list-item">
 					<span class="count mr-4">1</span>
 					<figure class="img">
@@ -152,7 +104,7 @@
 						</svg>
 					</button>
 				</li>
-				<li class="song__list-item">
+				<li class="song__list-item playing">
 					<span class="count mr-4">2</span>
 					<figure class="img">
 						<img src="img/top-played2.png" alt="img" />
