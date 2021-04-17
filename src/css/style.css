@@ -97,14 +97,18 @@ p {
   .btn__back svg {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 2rem;
-    fill: #fff; }
+    margin-right: 1rem;
+    fill: currentColor; }
 
 .laptop-port-show {
   display: none; }
   @media only screen and (max-width: 64em) {
     .laptop-port-show {
       display: block; } }
+
+@media only screen and (max-width: 64em) {
+  .laptop-port-hide {
+    display: none; } }
 
 .tablet-port-show {
   display: none; }
@@ -392,6 +396,8 @@ p {
   overflow: hidden;
   margin-bottom: 1rem;
   position: relative; }
+  .slide__item .img img {
+    width: 100%; }
 
 .playing-wrapper {
   position: fixed;
@@ -587,7 +593,9 @@ p {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
-      fill: #fff; }
+      fill: #fff;
+      opacity: 0;
+      visibility: hidden; }
   .song__list-item .dot__menu {
     margin-left: auto; }
     .song__list-item .dot__menu svg {
@@ -595,6 +603,9 @@ p {
       height: 1rem; }
   .song__list-item.playing .playing__indicator {
     display: inline-block; }
+  .song__list-item.playing .img svg {
+    opacity: 1;
+    visibility: visible; }
 
 .playing__indicator {
   width: 3px;
@@ -666,6 +677,17 @@ p {
     transform: translate(-50%, -50%);
     z-index: 3;
     fill: #fff; }
+  @media only screen and (max-width: 64em) {
+    .slider3 .img {
+      width: 10rem;
+      height: 10rem; } }
+  @media only screen and (max-width: 48em) {
+    .slider3 .img {
+      width: 9rem;
+      height: 9rem; } }
+
+.slider3 .slide__item img {
+  width: 100%; }
 
 @media only screen and (max-width: 64em) {
   .slider3 {
@@ -721,3 +743,46 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 10rem; }
+
+@media only screen and (max-width: 64em) {
+  .featured-page .slider3 {
+    display: block !important; } }
+
+@media only screen and (max-width: 48em) {
+  .featured-page .slider3 .owl-stage-outer {
+    overflow: visible; } }
+
+@media only screen and (max-width: 48em) {
+  .featured-page .slider2 {
+    display: block !important; } }
+
+@media only screen and (max-width: 1350px) {
+  .artist-page .sidebar {
+    display: none; } }
+
+@media only screen and (max-width: 1350px) {
+  .artist-page .main-content {
+    margin-top: 0; } }
+
+.artist-page .btn__follow-outer,
+.artist-page .btn__back {
+  position: absolute;
+  top: 3rem;
+  right: 2rem; }
+
+.artist-page .btn__follow-outer {
+  right: inherit;
+  left: 2rem; }
+
+.artist-page .artist__image {
+  max-width: 18rem;
+  max-height: 18rem;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 auto; }
+  @media only screen and (max-width: 64em) {
+    .artist-page .artist__image {
+      border-radius: 50%;
+      max-width: 15rem;
+      max-height: 15rem;
+      margin-top: 5rem; } }

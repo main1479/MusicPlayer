@@ -44,6 +44,8 @@
 				transform: translate(-50%, -50%);
 				z-index: 3;
 				fill: #fff;
+				opacity: 0;
+				visibility: hidden;
 			}
 		}
 
@@ -60,6 +62,14 @@
          .playing__indicator{
             display: inline-block;
          }
+
+			.img{
+
+				svg{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
       }
 	}
 }

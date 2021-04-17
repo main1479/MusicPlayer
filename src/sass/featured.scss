@@ -1,0 +1,18 @@
+.featured-page {
+	.slider3 {
+		@media only screen and(max-width:$laptop-port) {
+			display: block !important;
+		}
+
+      @media only screen and (max-width:$tab-port){
+         .owl-stage-outer{
+            overflow: visible;
+      }
+      }
+	}
+	.slider2 {
+		@media only screen and(max-width:$tab-port) {
+			display: block !important;
+		}
+	}
+}

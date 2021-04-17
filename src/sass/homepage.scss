@@ -39,7 +39,23 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 				z-index: 3;
-            fill: #fff;
+				fill: #fff;
+			}
+
+			@media only screen and (max-width: $laptop-port) {
+				width: 10rem;
+				height: 10rem;
+			}
+			@media only screen and (max-width: $tab-port) {
+				width: 9rem;
+				height: 9rem;
+			}
+			
+		}
+
+		.slide__item {
+			img {
+				width: 100%;
 			}
 		}
 	}

@@ -99,8 +99,8 @@ p {
 	svg {
 		width: 1.5rem;
 		height: 1.5rem;
-		margin-right: 2rem;
-		fill: #fff;
+		margin-right: 1rem;
+		fill: currentColor;
 	}
 }
 
@@ -109,6 +109,11 @@ p {
 
 	@media only screen and (max-width: $laptop-port) {
 		display: block;
+	}
+}
+.laptop-port-hide {
+	@media only screen and (max-width: $laptop-port) {
+		display: none;
 	}
 }
 .tablet-port-show {

@@ -1,0 +1,42 @@
+.artist-page {
+	.sidebar {
+		@media only screen and (max-width: 1350px) {
+			display: none;
+		}
+	}
+	.main-content {
+		@media only screen and (max-width: 1350px) {
+			margin-top: 0;
+		}
+	}
+
+	.btn__follow-outer,
+	.btn__back {
+		position: absolute;
+		top: 3rem;
+		right: 2rem;
+	}
+
+	.btn__follow-outer {
+		right: inherit;
+		left: 2rem;
+		// display: inline-block !important;
+	}
+
+	.artist {
+		&__image {
+			max-width: 18rem;
+			max-height: 18rem;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 0 auto;
+
+			@media only screen and (max-width: $laptop-port) {
+				border-radius: 50%;
+				max-width: 15rem;
+				max-height: 15rem;
+            margin-top: 5rem;
+			}
+		}
+	}
+}
